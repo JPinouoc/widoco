@@ -1,0 +1,834 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "Touristic Recommendations Ontology"
+    },
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "labels" : {
+      "en" : "TouristicRecommendationsOntology"
+    },
+    "comments" : {
+      "en" : "An ontology for touristic recommendations"
+    },
+    "other" : {
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Touristic Recommendations Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concert",
+      "en" : "Concert"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses",
+      "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "en",
+          "value" : "https://dbpedia.org/page/Guns_N'_Roses",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Rock band that does concerts."
+      },
+      "labels" : {
+        "IRI-based" : "GunsNRoses",
+        "en" : "GunsAndRoses"
+      }
+    } ],
+    "comment" : {
+      "en" : "A musical performance given in public, typically by several performers or of several compositions."
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attraction",
+      "en" : "Attraction"
+    },
+    "subClasses" : [ "4", "5", "6" ],
+    "comment" : {
+      "en" : "A place which draws visitors by providing something of interest or pleasure."
+    },
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metro",
+      "en" : "Metro"
+    },
+    "comment" : {
+      "undefined" : "An underground railway system in a city"
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Taxi",
+      "en" : "Taxi"
+    },
+    "comment" : {
+      "en" : "A motor vehicle licensed to transport passengers in return for payment of a fare and typically fitted with a taximeter."
+    },
+    "id" : "21",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "subClasses" : [ "24", "25", "0", "26" ],
+    "comment" : {
+      "en" : "A thing that happens or takes place, especially one of importance."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalEvent",
+      "en" : "CulturalEvent"
+    },
+    "comment" : {
+      "en" : "An organized activity that promotes and celebrates the artistic, historical, and social aspects of a community or group"
+    },
+    "id" : "26",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BudgetHotel",
+      "en" : "BudgetHotel"
+    },
+    "comment" : {
+      "en" : "A cheap hotel."
+    },
+    "id" : "27",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SportsEvent",
+      "en" : "SportsEvent"
+    },
+    "comment" : {
+      "en" : "A sports event is a competition or game, typically involving physical activity, where individuals or teams compete against each other based on rules and regulations"
+    },
+    "id" : "24",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place",
+      "en" : "Place"
+    },
+    "subClasses" : [ "16", "28", "2", "19" ],
+    "comment" : {
+      "en" : "A particular position, point, or area in space; a location."
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "en" : "Restaurant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds",
+      "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+      "comment" : {
+        "en" : "McDonaldsInMadrid"
+      },
+      "labels" : {
+        "IRI-based" : "McDonalds",
+        "en" : "McDonaldsMadrid"
+      }
+    } ],
+    "subClasses" : [ "18", "23" ],
+    "comment" : {
+      "en" : "A place where people pay to sit and eat meals that are cooked and served on the premises."
+    },
+    "id" : "19",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FastFoodRestaurant",
+      "en" : "FastFoodRestaurant"
+    },
+    "comment" : {
+      "en" : "Restaurant where food is served fast and cheap but usually has low quality."
+    },
+    "id" : "23",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bus",
+      "en" : "Bus"
+    },
+    "comment" : {
+      "en" : "A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."
+    },
+    "id" : "35",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Festival",
+      "en" : "Festival"
+    },
+    "comment" : {
+      "en" : "A day or period of celebration, typically for religious reasons."
+    },
+    "id" : "25",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Park",
+      "en" : "Park"
+    },
+    "comment" : {
+      "en" : "A large public garden or area of land used for recreation."
+    },
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "en" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid",
+      "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "en",
+          "value" : "https://dbpedia.org/page/Madrid",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Madrid",
+        "undefined" : "Madrid"
+      }
+    } ],
+    "comment" : {
+      "en" : "A large town"
+    },
+    "id" : "16",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GastronomicRestaurant",
+      "en" : "GastronomicRestaurant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque",
+      "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+      "comment" : {
+        "en" : "Gastonomic restaurant in Madrid."
+      },
+      "labels" : {
+        "IRI-based" : "Coque",
+        "en" : "Coque"
+      }
+    } ],
+    "comment" : {
+      "en" : "Restaurant that specializes in expectional food and it is usually expensive."
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LuxuryHotel",
+      "en" : "LuxuryHotel"
+    },
+    "comment" : {
+      "en" : "An expensive hotel with many accommodations."
+    },
+    "id" : "31",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Monument",
+      "en" : "Monument"
+    },
+    "comment" : {
+      "en" : "A statue, building, or other structure erected to commemorate a notable person or event."
+    },
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel",
+      "en" : "Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid",
+      "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+      "comment" : {
+        "undefined" : "Budget hotel that forms part of a larger group of hotels around the world."
+      },
+      "labels" : {
+        "IRI-based" : "NovotelMadrid",
+        "en" : "NovotelMadrid"
+      }
+    } ],
+    "subClasses" : [ "27", "31" ],
+    "comment" : {
+      "en" : "An establishment providing accommodation, meals, and other services for travellers and tourists."
+    },
+    "id" : "28",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Museum",
+      "en" : "Museum"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum",
+      "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Museo_del_Prado",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Historic museum in Madrid."
+      },
+      "labels" : {
+        "IRI-based" : "PradoMuseum",
+        "en" : "Prado"
+      }
+    } ],
+    "comment" : {
+      "en" : "A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited."
+    },
+    "id" : "5",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "en" : "Transport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3",
+      "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+      "comment" : {
+        "en" : "Metro line in Madrid's subway system."
+      },
+      "labels" : {
+        "IRI-based" : "Linea3",
+        "en" : "Linea3"
+      }
+    } ],
+    "subClasses" : [ "7", "35", "21" ],
+    "comment" : {
+      "en" : "Take or carry (people or goods) from one place to another by means of a vehicle, aircraft, or ship."
+    },
+    "id" : "8"
+  } ],
+  "property" : [ {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "10",
+    "subproperty" : [ "11", "12", "13", "14", "15" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "isLocatedIn",
+      "en" : "isLocatedIn"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "2",
+    "comment" : {
+      "en" : "Domain is located in range"
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "8",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "19",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "28",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "ratingHotel",
+      "en" : "ratingHotel"
+    },
+    "maxCardinality" : "5",
+    "minCardinality" : "4",
+    "domain" : "28",
+    "comment" : {
+      "en" : "Hotel rating from 0 to 5"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "range" : "8",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "isSituatedIn",
+      "en" : "isSituatedIn"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "19",
+    "comment" : {
+      "en" : "Location for restaurant"
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "3",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "28",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "3",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "isFoundAt",
+      "en" : "isFoundAt"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "28",
+    "comment" : {
+      "en" : "Hotel localization"
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "3",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "1",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "travelsThrough",
+      "en" : "travelsThrough"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "Domain travels through range."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "takesPlaceIn",
+      "en" : "takesPlaceIn"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "Domain takes place in range"
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name"
+    },
+    "minCardinality" : "1",
+    "domain" : "8",
+    "comment" : {
+      "en" : "transport name"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "1",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "1",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating",
+    "baseIri" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "rating",
+      "en" : "rating"
+    },
+    "maxCardinality" : "5",
+    "minCardinality" : "4",
+    "domain" : "19",
+    "comment" : {
+      "en" : "restaurant rating"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "53"
+  } ]
+}

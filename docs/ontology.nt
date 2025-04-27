@@ -1,0 +1,484 @@
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology/1.0.0> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology> <http://purl.org/dc/elements/1.1/title> "Touristic Recommendations Ontology"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology for touristic recommendations"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology> <http://www.w3.org/2000/01/rdf-schema#label> "TouristicRecommendationsOntology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel localization"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt> <http://www.w3.org/2000/01/rdf-schema#label> "isFoundAt"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Domain is located in range"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isLocatedIn"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Location for restaurant"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isSituatedIn"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Domain takes place in range"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#label> "takesPlaceIn"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough> <http://www.w3.org/2000/01/rdf-schema#comment> "Domain travels through range."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough> <http://www.w3.org/2000/01/rdf-schema#label> "travelsThrough"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name> <http://www.w3.org/2000/01/rdf-schema#comment> "transport name"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> <http://www.w3.org/2000/01/rdf-schema#comment> "restaurant rating"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> <http://www.w3.org/2000/01/rdf-schema#label> "rating"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel rating from 0 to 5"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> <http://www.w3.org/2000/01/rdf-schema#label> "ratingHotel"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction> <http://www.w3.org/2000/01/rdf-schema#comment> "A place which draws visitors by providing something of interest or pleasure."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid3 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "A cheap hotel."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel> <http://www.w3.org/2000/01/rdf-schema#label> "BudgetHotel"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus> <http://www.w3.org/2000/01/rdf-schema#comment> "A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus> <http://www.w3.org/2000/01/rdf-schema#label> "Bus"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> <http://www.w3.org/2000/01/rdf-schema#comment> "A large town"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert> <http://www.w3.org/2000/01/rdf-schema#comment> "A musical performance given in public, typically by several performers or of several compositions."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert> <http://www.w3.org/2000/01/rdf-schema#label> "Concert"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An organized activity that promotes and celebrates the artistic, historical, and social aspects of a community or group"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#label> "CulturalEvent"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "A thing that happens or takes place, especially one of importance."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid6 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant where food is served fast and cheap but usually has low quality."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "FastFoodRestaurant"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival> <http://www.w3.org/2000/01/rdf-schema#comment> "A day or period of celebration, typically for religious reasons."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival> <http://www.w3.org/2000/01/rdf-schema#label> "Festival"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid7 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "4"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid8 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant that specializes in expectional food and it is usually expensive."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "GastronomicRestaurant"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "An establishment providing accommodation, meals, and other services for travellers and tourists."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid10 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "4"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid11 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "An expensive hotel with many accommodations."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#label> "LuxuryHotel"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro> <http://www.w3.org/2000/01/rdf-schema#comment> "An underground railway system in a city" .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro> <http://www.w3.org/2000/01/rdf-schema#label> "Metro"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument> <http://www.w3.org/2000/01/rdf-schema#comment> "A statue, building, or other structure erected to commemorate a notable person or event."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument> <http://www.w3.org/2000/01/rdf-schema#label> "Monument"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum> <http://www.w3.org/2000/01/rdf-schema#comment> "A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum> <http://www.w3.org/2000/01/rdf-schema#label> "Museum"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park> <http://www.w3.org/2000/01/rdf-schema#comment> "A large public garden or area of land used for recreation."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park> <http://www.w3.org/2000/01/rdf-schema#label> "Park"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular position, point, or area in space; a location."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "A place where people pay to sit and eat meals that are cooked and served on the premises."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "A sports event is a competition or game, typically involving physical activity, where individuals or teams compete against each other based on rules and regulations"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent> <http://www.w3.org/2000/01/rdf-schema#label> "SportsEvent"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi> <http://www.w3.org/2000/01/rdf-schema#comment> "A motor vehicle licensed to transport passengers in return for payment of a fare and typically fitted with a taximeter."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi> <http://www.w3.org/2000/01/rdf-schema#label> "Taxi"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> .
+_:genid13 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid14 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Take or carry (people or goods) from one place to another by means of a vehicle, aircraft, or ship."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> "4.1"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque> <http://www.w3.org/2000/01/rdf-schema#comment> "Gastonomic restaurant in Madrid."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque> <http://www.w3.org/2000/01/rdf-schema#label> "Coque"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs> "https://dbpedia.org/page/Guns_N'_Roses"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses> <http://www.w3.org/2000/01/rdf-schema#comment> "Rock band that does concerts."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses> <http://www.w3.org/2000/01/rdf-schema#label> "GunsAndRoses"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name> "Line3" .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3> <http://www.w3.org/2000/01/rdf-schema#comment> "Metro line in Madrid's subway system."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3> <http://www.w3.org/2000/01/rdf-schema#label> "Linea3"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs> "https://dbpedia.org/page/Madrid"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid> <http://www.w3.org/2000/01/rdf-schema#label> "Madrid" .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> "1.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds> <http://www.w3.org/2000/01/rdf-schema#comment> "McDonaldsInMadrid"@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds> <http://www.w3.org/2000/01/rdf-schema#label> "McDonaldsMadrid"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> "2.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Budget hotel that forms part of a larger group of hotels around the world." .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "NovotelMadrid"@en .
+# 
+# http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid> .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs> "https://dbpedia.org/page/Museo_del_Prado" .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum> <http://www.w3.org/2000/01/rdf-schema#comment> "Historic museum in Madrid."@en .
+<http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum> <http://www.w3.org/2000/01/rdf-schema#label> "Prado"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#rat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid15 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#comment> "If rating is less than 2, then it is a fast food restaurant" .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "Fast Food restaurant rating" .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid15 <http://www.w3.org/2003/11/swrl#body> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#arguments> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#rat> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r> .
+_:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#rat> .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r> .
+_:genid23 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid15 <http://www.w3.org/2003/11/swrl#head> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid26 <http://www.w3.org/2000/01/rdf-schema#comment> "Line3 is metro" .
+_:genid26 <http://www.w3.org/2000/01/rdf-schema#label> "Line3 Metro" .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid26 <http://www.w3.org/2003/11/swrl#body> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t> .
+_:genid28 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument2> "Line3" .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t> .
+_:genid30 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/2003/11/swrl#head> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t> .
+_:genid32 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid33 <http://www.w3.org/2000/01/rdf-schema#comment> "If Hotel has rating lower than 3, then it is a budget hotel" .
+_:genid33 <http://www.w3.org/2000/01/rdf-schema#label> "Budge hotel rating" .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid33 <http://www.w3.org/2003/11/swrl#body> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r> .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h> .
+_:genid35 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h> .
+_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#arguments> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/2003/11/swrl#head> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h> .
+_:genid43 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

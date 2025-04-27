@@ -1,0 +1,834 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#"
+     xml:base="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rfds="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:TouristicRecommendationsOntology="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology/1.0.0"/>
+        <dc:title xml:lang="en">Touristic Recommendations Ontology</dc:title>
+        <rdfs:comment xml:lang="en">An ontology for touristic recommendations</rdfs:comment>
+        <rdfs:label xml:lang="en">TouristicRecommendationsOntology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"/>
+        <rdfs:comment xml:lang="en">Hotel localization</rdfs:comment>
+        <rdfs:label xml:lang="en">isFoundAt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"/>
+        <rdfs:comment xml:lang="en">Domain is located in range</rdfs:comment>
+        <rdfs:label xml:lang="en">isLocatedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"/>
+        <rdfs:comment xml:lang="en">Location for restaurant</rdfs:comment>
+        <rdfs:label xml:lang="en">isSituatedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"/>
+        <rdfs:comment xml:lang="en">Domain takes place in range</rdfs:comment>
+        <rdfs:label xml:lang="en">takesPlaceIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"/>
+        <rdfs:comment xml:lang="en">Domain travels through range.</rdfs:comment>
+        <rdfs:label xml:lang="en">travelsThrough</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">transport name</rdfs:comment>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">restaurant rating</rdfs:comment>
+        <rdfs:label xml:lang="en">rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Hotel rating from 0 to 5</rdfs:comment>
+        <rdfs:label xml:lang="en">ratingHotel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A place which draws visitors by providing something of interest or pleasure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Attraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A cheap hotel.</rdfs:comment>
+        <rdfs:label xml:lang="en">BudgetHotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"/>
+        <rdfs:comment xml:lang="en">A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place"/>
+        <rdfs:comment xml:lang="en">A large town</rdfs:comment>
+        <rdfs:label xml:lang="en">City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event"/>
+        <rdfs:comment xml:lang="en">A musical performance given in public, typically by several performers or of several compositions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Concert</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event"/>
+        <rdfs:comment xml:lang="en">An organized activity that promotes and celebrates the artistic, historical, and social aspects of a community or group</rdfs:comment>
+        <rdfs:label xml:lang="en">CulturalEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A thing that happens or takes place, especially one of importance.</rdfs:comment>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Restaurant where food is served fast and cheap but usually has low quality.</rdfs:comment>
+        <rdfs:label xml:lang="en">FastFoodRestaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event"/>
+        <rdfs:comment xml:lang="en">A day or period of celebration, typically for religious reasons.</rdfs:comment>
+        <rdfs:label xml:lang="en">Festival</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Restaurant that specializes in expectional food and it is usually expensive.</rdfs:comment>
+        <rdfs:label xml:lang="en">GastronomicRestaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An establishment providing accommodation, meals, and other services for travellers and tourists.</rdfs:comment>
+        <rdfs:label xml:lang="en">Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An expensive hotel with many accommodations.</rdfs:comment>
+        <rdfs:label xml:lang="en">LuxuryHotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"/>
+        <rdfs:comment>An underground railway system in a city</rdfs:comment>
+        <rdfs:label xml:lang="en">Metro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction"/>
+        <rdfs:comment xml:lang="en">A statue, building, or other structure erected to commemorate a notable person or event.</rdfs:comment>
+        <rdfs:label xml:lang="en">Monument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction"/>
+        <rdfs:comment xml:lang="en">A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited.</rdfs:comment>
+        <rdfs:label xml:lang="en">Museum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction"/>
+        <rdfs:comment xml:lang="en">A large public garden or area of land used for recreation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Park</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place">
+        <rdfs:comment xml:lang="en">A particular position, point, or area in space; a location.</rdfs:comment>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A place where people pay to sit and eat meals that are cooked and served on the premises.</rdfs:comment>
+        <rdfs:label xml:lang="en">Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event"/>
+        <rdfs:comment xml:lang="en">A sports event is a competition or game, typically involving physical activity, where individuals or teams compete against each other based on rules and regulations</rdfs:comment>
+        <rdfs:label xml:lang="en">SportsEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"/>
+        <rdfs:comment xml:lang="en">A motor vehicle licensed to transport passengers in return for payment of a fare and typically fitted with a taximeter.</rdfs:comment>
+        <rdfs:label xml:lang="en">Taxi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Take or carry (people or goods) from one place to another by means of a vehicle, aircraft, or ship.</rdfs:comment>
+        <rdfs:label xml:lang="en">Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant"/>
+        <isSituatedIn rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"/>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.1</rating>
+        <rdfs:comment xml:lang="en">Gastonomic restaurant in Madrid.</rdfs:comment>
+        <rdfs:label xml:lang="en">Coque</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert"/>
+        <takesPlaceIn rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"/>
+        <rfds:sameAs xml:lang="en">https://dbpedia.org/page/Guns_N&apos;_Roses</rfds:sameAs>
+        <rdfs:comment xml:lang="en">Rock band that does concerts.</rdfs:comment>
+        <rdfs:label xml:lang="en">GunsAndRoses</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"/>
+        <travelsThrough rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"/>
+        <name>Line3</name>
+        <rdfs:comment xml:lang="en">Metro line in Madrid&apos;s subway system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Linea3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"/>
+        <rfds:sameAs xml:lang="en">https://dbpedia.org/page/Madrid</rfds:sameAs>
+        <rdfs:label>Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"/>
+        <isSituatedIn rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"/>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.9</rating>
+        <rdfs:comment xml:lang="en">McDonaldsInMadrid</rdfs:comment>
+        <rdfs:label xml:lang="en">McDonaldsMadrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"/>
+        <isFoundAt rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"/>
+        <ratingHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.3</ratingHotel>
+        <rdfs:comment>Budget hotel that forms part of a larger group of hotels around the world.</rdfs:comment>
+        <rdfs:label xml:lang="en">NovotelMadrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"/>
+        <rfds:sameAs>https://dbpedia.org/page/Museo_del_Prado</rfds:sameAs>
+        <rdfs:comment xml:lang="en">Historic museum in Madrid.</rdfs:comment>
+        <rdfs:label xml:lang="en">Prado</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#rat">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>If rating is less than 2, then it is a fast food restaurant</rdfs:comment>
+        <rdfs:label>Fast Food restaurant rating</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#rat"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#rat"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Line3 is metro</rdfs:comment>
+        <rdfs:label>Line3 Metro</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t"/>
+                        <swrl:argument2>Line3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>If Hotel has rating lower than 3, then it is a budget hotel</rdfs:comment>
+        <rdfs:label>Budge hotel rating</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

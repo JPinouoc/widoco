@@ -1,0 +1,1032 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If rating is less than 2, then it is a fast food restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fast Food restaurant rating"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid23"
+    }, {
+      "@id" : "_:genid21"
+    }, {
+      "@id" : "_:genid17"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#rat"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "3"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#rat"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Line3 is metro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Line3 Metro"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid30"
+    }, {
+      "@id" : "_:genid28"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@value" : "Line3"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If Hotel has rating lower than 3, then it is a budget hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Budge hotel rating"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid39"
+    }, {
+      "@id" : "_:genid37"
+    }, {
+      "@id" : "_:genid35"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid43"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "3"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#h",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#rat",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#t",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Touristic Recommendations Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An ontology for touristic recommendations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TouristicRecommendationsOntology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology/1.0.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A place which draws visitors by providing something of interest or pleasure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A cheap hotel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BudgetHotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A large town"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A musical performance given in public, typically by several performers or of several compositions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Concert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Gastonomic restaurant in Madrid."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Coque"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An organized activity that promotes and celebrates the artistic, historical, and social aspects of a community or group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CulturalEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A thing that happens or takes place, especially one of importance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Restaurant where food is served fast and cheap but usually has low quality."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FastFoodRestaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A day or period of celebration, typically for religious reasons."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Festival"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Restaurant that specializes in expectional food and it is usually expensive."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GastronomicRestaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/page/Guns_N'_Roses"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Rock band that does concerts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GunsAndRoses"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An establishment providing accommodation, meals, and other services for travellers and tourists."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name" : [ {
+    "@value" : "Line3"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Metro line in Madrid's subway system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Linea3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An expensive hotel with many accommodations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LuxuryHotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/page/Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Madrid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "1.9"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "McDonaldsInMadrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "McDonaldsMadrid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An underground railway system in a city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Metro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A statue, building, or other structure erected to commemorate a notable person or event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Monument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Museum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "2.3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Budget hotel that forms part of a larger group of hotels around the world."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NovotelMadrid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A large public garden or area of land used for recreation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Park"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A particular position, point, or area in space; a location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Museo_del_Prado"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Historic museum in Madrid."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Prado"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A place where people pay to sit and eat meals that are cooked and served on the premises."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A sports event is a competition or game, typically involving physical activity, where individuals or teams compete against each other based on rules and regulations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SportsEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A motor vehicle licensed to transport passengers in return for payment of a fare and typically fitted with a taximeter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Taxi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Take or carry (people or goods) from one place to another by means of a vehicle, aircraft, or ship."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Hotel localization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isFoundAt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Domain is located in range"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isLocatedIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Location for restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isSituatedIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "transport name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "restaurant rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Hotel rating from 0 to 5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ratingHotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Domain takes place in range"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "takesPlaceIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Domain travels through range."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "travelsThrough"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+} ]

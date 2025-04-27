@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>Touristic Recommendations Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology","name":"Touristic Recommendations Ontology", "headline":"Document describing the ontology http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology", "dateReleased":"Sun Apr 27 20:07:35 CEST 2025"}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Touristic Recommendations Ontology</h1>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology/1.0.0">http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology/1.0.0</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology">http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology</a></dd>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd><dt>Cite as:</dt>
+<dd> Touristic Recommendations Ontology. Retrieved from: http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology/1.0.0</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>TouristicRecommendationsOntology</b></td><td>&lt;http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#&gt;</td></tr>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>rfds</b></td><td>&lt;http://www.semanticweb.org/jordi/ontologies/2025/0/TouristicRecommendationsOntology#rfds:&gt;</td></tr>
+<tr><td><b>rfds1</b></td><td>&lt;http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:&gt;</td></tr>
+<tr><td><b>swrl</b></td><td>&lt;http://www.w3.org/2003/11/swrl#&gt;</td></tr>
+<tr><td><b>swrla</b></td><td>&lt;http://swrl.stanford.edu/ontologies/3.3/swrla.owl#&gt;</td></tr>
+<tr><td><b>swrlb</b></td><td>&lt;http://www.w3.org/2003/11/swrlb#&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">TouristicRecommendationsOntology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#Attraction"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction">Attraction</a>
+   </li>
+   <li>
+      <a href="#BudgetHotel"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel">BudgetHotel</a>
+   </li>
+   <li>
+      <a href="#Bus"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus">Bus</a>
+   </li>
+   <li>
+      <a href="#City"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City">City</a>
+   </li>
+   <li>
+      <a href="#Concert"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert">Concert</a>
+   </li>
+   <li>
+      <a href="#CulturalEvent"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent">CulturalEvent</a>
+   </li>
+   <li>
+      <a href="#Event"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event">Event</a>
+   </li>
+   <li>
+      <a href="#FastFoodRestaurant"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant">FastFoodRestaurant</a>
+   </li>
+   <li>
+      <a href="#Festival"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival">Festival</a>
+   </li>
+   <li>
+      <a href="#GastronomicRestaurant"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant">GastronomicRestaurant</a>
+   </li>
+   <li>
+      <a href="#Hotel"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel">Hotel</a>
+   </li>
+   <li>
+      <a href="#LuxuryHotel"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel">LuxuryHotel</a>
+   </li>
+   <li>
+      <a href="#Metro"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro">Metro</a>
+   </li>
+   <li>
+      <a href="#Monument"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument">Monument</a>
+   </li>
+   <li>
+      <a href="#Museum"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum">Museum</a>
+   </li>
+   <li>
+      <a href="#Park"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park">Park</a>
+   </li>
+   <li>
+      <a href="#Place"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place">Place</a>
+   </li>
+   <li>
+      <a href="#Restaurant"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant">Restaurant</a>
+   </li>
+   <li>
+      <a href="#SportsEvent"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent">SportsEvent</a>
+   </li>
+   <li>
+      <a href="#Taxi"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi">Taxi</a>
+   </li>
+   <li>
+      <a href="#Transport"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport">Transport</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#isFoundAt"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt">isFoundAt</a>
+   </li>
+   <li>
+      <a href="#isLocatedIn"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn">isLocatedIn</a>
+   </li>
+   <li>
+      <a href="#isSituatedIn"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn">isSituatedIn</a>
+   </li>
+   <li>
+      <a href="#takesPlaceIn"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn">takesPlaceIn</a>
+   </li>
+   <li>
+      <a href="#travelsThrough"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough">travelsThrough</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#name"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name">name</a>
+   </li>
+   <li>
+      <a href="#rating"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating">rating</a>
+   </li>
+   <li>
+      <a href="#ratingHotel"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel">ratingHotel</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#Coque"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque">Coque</a>
+   </li>
+   <li>
+      <a href="#GunsNRoses"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses">GunsAndRoses</a>
+   </li>
+   <li>
+      <a href="#Linea3"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3">Linea3</a>
+   </li>
+   <li>
+      <a href="#Madrid"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid">Madrid</a>
+   </li>
+   <li>
+      <a href="#McDonalds"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds">McDonaldsMadrid</a>
+   </li>
+   <li>
+      <a href="#NovotelMadrid"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid">NovotelMadrid</a>
+   </li>
+   <li>
+      <a href="#PradoMuseum"
+         title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum">Prado</a>
+   </li>
+</ul><h4> SWRL Rules </h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#d4e985">Budge hotel rating</a>
+   </li>
+   <li>
+      <a href="#d4e781">Fast Food restaurant rating</a>
+   </li>
+   <li>
+      <a href="#d4e903">Line3 Metro</a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">TouristicRecommendationsOntology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">An ontology for touristic recommendations</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for TouristicRecommendationsOntology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by TouristicRecommendationsOntology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Attraction" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction">Attraction</a></li>
+  <li><a href="#BudgetHotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel">BudgetHotel</a></li>
+  <li><a href="#Bus" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus">Bus</a></li>
+  <li><a href="#City" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City">City</a></li>
+  <li><a href="#Concert" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert">Concert</a></li>
+  <li><a href="#CulturalEvent" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent">CulturalEvent</a></li>
+  <li><a href="#Event" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event">Event</a></li>
+  <li><a href="#FastFoodRestaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant">FastFoodRestaurant</a></li>
+  <li><a href="#Festival" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival">Festival</a></li>
+  <li><a href="#GastronomicRestaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant">GastronomicRestaurant</a></li>
+  <li><a href="#Hotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel">Hotel</a></li>
+  <li><a href="#LuxuryHotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel">LuxuryHotel</a></li>
+  <li><a href="#Metro" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro">Metro</a></li>
+  <li><a href="#Monument" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument">Monument</a></li>
+  <li><a href="#Museum" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum">Museum</a></li>
+  <li><a href="#Park" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park">Park</a></li>
+  <li><a href="#Place" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place">Place</a></li>
+  <li><a href="#Restaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant">Restaurant</a></li>
+  <li><a href="#SportsEvent" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent">SportsEvent</a></li>
+  <li><a href="#Taxi" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi">Taxi</a></li>
+  <li><a href="#Transport" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport">Transport</a></li>
+ </ul>
+ <div class="entity" id="Attraction">
+  <h3>Attraction<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction</p>
+  <div class="comment">
+   <span class="markdown">A place which draws visitors by providing something of interest or pleasure.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Place" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place">Place</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Monument" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument">Monument</a> <sup class="type-c" title="class">c</sup>, <a href="#Museum" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum">Museum</a> <sup class="type-c" title="class">c</sup>, <a href="#Park" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park">Park</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#isLocatedIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn">isLocatedIn</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="BudgetHotel">
+  <h3>BudgetHotel<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel</p>
+  <div class="comment">
+   <span class="markdown">A cheap hotel.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Hotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel">Hotel</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Bus">
+  <h3>Bus<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus</p>
+  <div class="comment">
+   <span class="markdown">A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Transport" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport">Transport</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="City">
+  <h3>City<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City</p>
+  <div class="comment">
+   <span class="markdown">A large town</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Place" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place">Place</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isFoundAt" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt">isFoundAt</a> <sup class="type-op" title="object property">op</sup>, <a href="#isLocatedIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn">isLocatedIn</a> <sup class="type-op" title="object property">op</sup>, <a href="#isSituatedIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn">isSituatedIn</a> <sup class="type-op" title="object property">op</sup>, <a href="#takesPlaceIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn">takesPlaceIn</a> <sup class="type-op" title="object property">op</sup>, <a href="#travelsThrough" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough">travelsThrough</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Madrid" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid">Madrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Concert">
+  <h3>Concert<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert</p>
+  <div class="comment">
+   <span class="markdown">A musical performance given in public, typically by several performers or of several compositions.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Event" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event">Event</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#GunsNRoses" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses">GunsAndRoses</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CulturalEvent">
+  <h3>CulturalEvent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent</p>
+  <div class="comment">
+   <span class="markdown">An organized activity that promotes and celebrates the artistic, historical, and social aspects of a community or group</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Event" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event">Event</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Event">
+  <h3>Event<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event</p>
+  <div class="comment">
+   <span class="markdown">A thing that happens or takes place, especially one of importance.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Concert" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert">Concert</a> <sup class="type-c" title="class">c</sup>, <a href="#CulturalEvent" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#CulturalEvent">CulturalEvent</a> <sup class="type-c" title="class">c</sup>, <a href="#Festival" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival">Festival</a> <sup class="type-c" title="class">c</sup>, <a href="#SportsEvent" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent">SportsEvent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#takesPlaceIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn">takesPlaceIn</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FastFoodRestaurant">
+  <h3>FastFoodRestaurant<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant</p>
+  <div class="comment">
+   <span class="markdown">Restaurant where food is served fast and cheap but usually has low quality.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Restaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant">Restaurant</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Festival">
+  <h3>Festival<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Festival</p>
+  <div class="comment">
+   <span class="markdown">A day or period of celebration, typically for religious reasons.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Event" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event">Event</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="GastronomicRestaurant">
+  <h3>GastronomicRestaurant<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant</p>
+  <div class="comment">
+   <span class="markdown">Restaurant that specializes in expectional food and it is usually expensive.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Restaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant">Restaurant</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Coque" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque">Coque</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Hotel">
+  <h3>Hotel<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel</p>
+  <div class="comment">
+   <span class="markdown">An establishment providing accommodation, meals, and other services for travellers and tourists.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Place" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place">Place</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#BudgetHotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel">BudgetHotel</a> <sup class="type-c" title="class">c</sup>, <a href="#LuxuryHotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel">LuxuryHotel</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#isFoundAt" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt">isFoundAt</a> <sup class="type-op" title="object property">op</sup>, <a href="#ratingHotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel">ratingHotel</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#NovotelMadrid" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid">NovotelMadrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="LuxuryHotel">
+  <h3>LuxuryHotel<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#LuxuryHotel</p>
+  <div class="comment">
+   <span class="markdown">An expensive hotel with many accommodations.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Hotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel">Hotel</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Metro">
+  <h3>Metro<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro</p>
+  <div class="comment">
+   <span class="markdown">An underground railway system in a city</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Transport" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport">Transport</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Monument">
+  <h3>Monument<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Monument</p>
+  <div class="comment">
+   <span class="markdown">A statue, building, or other structure erected to commemorate a notable person or event.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Attraction" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction">Attraction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Museum">
+  <h3>Museum<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum</p>
+  <div class="comment">
+   <span class="markdown">A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Attraction" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction">Attraction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#PradoMuseum" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum">Prado</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Park">
+  <h3>Park<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Park</p>
+  <div class="comment">
+   <span class="markdown">A large public garden or area of land used for recreation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Attraction" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction">Attraction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Place">
+  <h3>Place<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place</p>
+  <div class="comment">
+   <span class="markdown">A particular position, point, or area in space; a location.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Attraction" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction">Attraction</a> <sup class="type-c" title="class">c</sup>, <a href="#City" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City">City</a> <sup class="type-c" title="class">c</sup>, <a href="#Hotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel">Hotel</a> <sup class="type-c" title="class">c</sup>, <a href="#Restaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant">Restaurant</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Restaurant">
+  <h3>Restaurant<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant</p>
+  <div class="comment">
+   <span class="markdown">A place where people pay to sit and eat meals that are cooked and served on the premises.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Place" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Place">Place</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#FastFoodRestaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant">FastFoodRestaurant</a> <sup class="type-c" title="class">c</sup>, <a href="#GastronomicRestaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant">GastronomicRestaurant</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#isSituatedIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn">isSituatedIn</a> <sup class="type-op" title="object property">op</sup>, <a href="#rating" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating">rating</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#McDonalds" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds">McDonaldsMadrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SportsEvent">
+  <h3>SportsEvent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#SportsEvent</p>
+  <div class="comment">
+   <span class="markdown">A sports event is a competition or game, typically involving physical activity, where individuals or teams compete against each other based on rules and regulations</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Event" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event">Event</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Taxi">
+  <h3>Taxi<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi</p>
+  <div class="comment">
+   <span class="markdown">A motor vehicle licensed to transport passengers in return for payment of a fare and typically fitted with a taximeter.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Transport" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport">Transport</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Transport">
+  <h3>Transport<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport</p>
+  <div class="comment">
+   <span class="markdown">Take or carry (people or goods) from one place to another by means of a vehicle, aircraft, or ship.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Bus" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Bus">Bus</a> <sup class="type-c" title="class">c</sup>, <a href="#Metro" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro">Metro</a> <sup class="type-c" title="class">c</sup>, <a href="#Taxi" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Taxi">Taxi</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#name" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name">name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#travelsThrough" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough">travelsThrough</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Linea3" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3">Linea3</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#isFoundAt" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt">isFoundAt</a></li>
+  <li><a href="#isLocatedIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn">isLocatedIn</a></li>
+  <li><a href="#isSituatedIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn">isSituatedIn</a></li>
+  <li><a href="#takesPlaceIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn">takesPlaceIn</a></li>
+  <li><a href="#travelsThrough" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough">travelsThrough</a></li>
+ </ul>
+ <div class="entity" id="isFoundAt">
+  <h3>isFoundAt<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt</p>
+  <div class="comment">
+   <span class="markdown">Hotel localization</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Hotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel">Hotel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#City" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City">City</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isLocatedIn">
+  <h3>isLocatedIn<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn</p>
+  <div class="comment">
+   <span class="markdown">Domain is located in range</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Attraction" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Attraction">Attraction</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#City" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City">City</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isSituatedIn">
+  <h3>isSituatedIn<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn</p>
+  <div class="comment">
+   <span class="markdown">Location for restaurant</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Restaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant">Restaurant</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#City" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City">City</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="takesPlaceIn">
+  <h3>takesPlaceIn<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn</p>
+  <div class="comment">
+   <span class="markdown">Domain takes place in range</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Event" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Event">Event</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#City" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City">City</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="travelsThrough">
+  <h3>travelsThrough<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough</p>
+  <div class="comment">
+   <span class="markdown">Domain travels through range.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Transport" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport">Transport</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#City" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City">City</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#name" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name">name</a></li>
+  <li><a href="#rating" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating">rating</a></li>
+  <li><a href="#ratingHotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel">ratingHotel</a></li>
+ </ul>
+ <div class="entity" id="name">
+  <h3>name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name</p>
+  <div class="comment">
+   <span class="markdown">transport name</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Transport" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport">Transport</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="rating">
+  <h3>rating<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating</p>
+  <div class="comment">
+   <span class="markdown">restaurant rating</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Restaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant">Restaurant</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#float" target="_blank" title="http://www.w3.org/2001/XMLSchema#float">float</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ratingHotel">
+  <h3>ratingHotel<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel</p>
+  <div class="comment">
+   <span class="markdown">Hotel rating from 0 to 5</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Hotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel">Hotel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#float" target="_blank" title="http://www.w3.org/2001/XMLSchema#float">float</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#Coque" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque">Coque</a></li>
+  <li><a href="#GunsNRoses" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses">GunsAndRoses</a></li>
+  <li><a href="#Linea3" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3">Linea3</a></li>
+  <li><a href="#Madrid" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid">Madrid</a></li>
+  <li><a href="#McDonalds" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds">McDonaldsMadrid</a></li>
+  <li><a href="#NovotelMadrid" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid">NovotelMadrid</a></li>
+  <li><a href="#PradoMuseum" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum">Prado</a></li>
+ </ul>
+ <div class="entity" id="Coque">
+  <h3>Coque<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Coque</p>
+  <div class="comment">
+   <span class="markdown">Gastonomic restaurant in Madrid.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#GastronomicRestaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GastronomicRestaurant">GastronomicRestaurant</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#isSituatedIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn">isSituatedIn</a> <sup class="type-op" title="object property">op</sup> <a href="#Madrid" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid">Madrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#rating" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating">rating</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"4.1"^^<a href="http://www.w3.org/2001/XMLSchema#float" target="_blank" title="http://www.w3.org/2001/XMLSchema#float">float</a> </span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="GunsNRoses">
+  <h3>GunsAndRoses<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#GunsNRoses</p>
+  <div class="comment">
+   <span class="markdown">Rock band that does concerts.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Concert" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Concert">Concert</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#takesPlaceIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#takesPlaceIn">takesPlaceIn</a> <sup class="type-op" title="object property">op</sup> <a href="#Madrid" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid">Madrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#rfds:sameAs" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs">rfds:same As</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://dbpedia.org/page/Guns_N'_Roses"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Linea3">
+  <h3>Linea3<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Linea3</p>
+  <div class="comment">
+   <span class="markdown">Metro line in Madrid's subway system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Transport" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport">Transport</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#travelsThrough" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#travelsThrough">travelsThrough</a> <sup class="type-op" title="object property">op</sup> <a href="#Madrid" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid">Madrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#name" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Line3"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Madrid">
+  <h3>Madrid<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#City" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#City">City</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#rfds:sameAs" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs">rfds:same As</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://dbpedia.org/page/Madrid"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="McDonalds">
+  <h3>McDonaldsMadrid<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#McDonalds</p>
+  <div class="comment">
+   <span class="markdown">McDonaldsInMadrid</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Restaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant">Restaurant</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#isSituatedIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isSituatedIn">isSituatedIn</a> <sup class="type-op" title="object property">op</sup> <a href="#Madrid" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid">Madrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#rating" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating">rating</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.9"^^<a href="http://www.w3.org/2001/XMLSchema#float" target="_blank" title="http://www.w3.org/2001/XMLSchema#float">float</a> </span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="NovotelMadrid">
+  <h3>NovotelMadrid<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#NovotelMadrid</p>
+  <div class="comment">
+   <span class="markdown">Budget hotel that forms part of a larger group of hotels around the world.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Hotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel">Hotel</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#isFoundAt" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isFoundAt">isFoundAt</a> <sup class="type-op" title="object property">op</sup> <a href="#Madrid" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid">Madrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#ratingHotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel">ratingHotel</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2.3"^^<a href="http://www.w3.org/2001/XMLSchema#float" target="_blank" title="http://www.w3.org/2001/XMLSchema#float">float</a> </span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PradoMuseum">
+  <h3>Prado<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#PradoMuseum</p>
+  <div class="comment">
+   <span class="markdown">Historic museum in Madrid.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Museum" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Museum">Museum</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#isLocatedIn" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#isLocatedIn">isLocatedIn</a> <sup class="type-op" title="object property">op</sup> <a href="#Madrid" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Madrid">Madrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#rfds:sameAs" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rfds:sameAs">rfds:same As</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://dbpedia.org/page/Museo_del_Prado"</span>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="swrlrules">
+ <h3 id="swrlrules" class="list">SWRL rules</h3>
+ <ul class="hlist">
+  <li><a href="#d4e985">Budge hotel rating</a></li>
+  <li><a href="#d4e781">Fast Food restaurant rating</a></li>
+  <li><a href="#d4e903">Line3 Metro</a></li>
+ </ul>
+ <div class="entity" id="d4e985">
+  <h3>Budge hotel rating<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p>If Hotel has rating lower than 3, then it is a budget hotel<br><br><a href="http://www.w3.org/2003/11/swrlb#lessThan" title="lessThan">lessThan</a>(?) , <a href="#Hotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Hotel">Hotel</a> <sup class="type-c" title="class">c</sup>(?h) , <a href="#ratingHotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#ratingHotel">ratingHotel</a> <sup class="type-dp" title="data property">dp</sup>(?h,?r) -&gt; <a href="#BudgetHotel" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#BudgetHotel">BudgetHotel</a> <sup class="type-c" title="class">c</sup>(?h)</p>
+ </div>
+ <div class="entity" id="d4e781">
+  <h3>Fast Food restaurant rating<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p>If rating is less than 2, then it is a fast food restaurant<br><br><a href="#rating" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#rating">rating</a> <sup class="type-dp" title="data property">dp</sup>(?r,?rat) , <a href="#Restaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Restaurant">Restaurant</a> <sup class="type-c" title="class">c</sup>(?r) , <a href="http://www.w3.org/2003/11/swrlb#lessThan" title="lessThan">lessThan</a>(?) -&gt; <a href="#FastFoodRestaurant" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#FastFoodRestaurant">FastFoodRestaurant</a> <sup class="type-c" title="class">c</sup>(?r)</p>
+ </div>
+ <div class="entity" id="d4e903">
+  <h3>Line3 Metro<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p>Line3 is metro<br><br><a href="#name" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#name">name</a> <sup class="type-dp" title="data property">dp</sup>(?t,"Line3") , <a href="#Transport" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Transport">Transport</a> <sup class="type-c" title="class">c</sup>(?t) -&gt; <a href="#Metro" title="http://www.semanticweb.org/jordi/ontologies/2025/5/TouristicRecommendationsOntology#Metro">Metro</a> <sup class="type-c" title="class">c</sup>(?t)</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>
